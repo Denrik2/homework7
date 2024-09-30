@@ -19,18 +19,16 @@ public class Main {
         }
         System.out.println();
         int c = 10;
-        while (c > 0) {
+        for (;c > 0; c--) {
             System.out.print(c + " ");
-            c--;
         }
         //Задание 3
         System.out.println("Задание 3");
         int population = 12_000_000;
-        int birthRate = population / 1000 * (17 - 8);
         int a = 0;
         while (a < 11){
             System.out.println("Год " + a + ", численность населения составляет " + population);
-            population = population + birthRate;
+            population = population + (population / 1000 * (17 - 8));
             a++;
         }
         //Задание 4
@@ -59,7 +57,7 @@ public class Main {
         System.out.println("Задание 6");
         int contribution2 = 15_000;
         int c1 = 0;
-        while (c1 < 109) {
+        while (c1 < (9 * 12)) {
             c1 = c1 + 1;
             contribution2 = contribution2 + 15_000;
             contribution2 = contribution2 + (contribution2 / 100 * 7);
